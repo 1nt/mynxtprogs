@@ -1,3 +1,26 @@
+# Project Context for Gemini
+
+## Repository Info
+- **Remote Origin (SSH):** git@github.com:1nt/mynxtprogs.git
+- **Branch:** master
+- **Hardware:** LEGO Mindstorms NXT (Brick)
+- **Primary Library:** nxt-python
+
+## Environment Setup
+- **OS:** Linux (Ubuntu/Debian based)
+- **Connection Type:** USB (via pyusb) / Bluetooth
+- **Udev Rule:** SUBSYSTEM=="usb", ATTR{idVendor}=="0694", GROUP="plugdev", MODE="0660"
+
+## Task Instructions
+1. **Code Generation:** When generating Python scripts for this repo, always use the `nxt.locator` and `nxt.brick` structures compatible with `nxt-python`.
+2. **Display Specs:** Remember the NXT screen is 100x64 pixels.
+3. **Execution:** All scripts are executed on the Host PC (A7S), which controls the NXT brick via cable/BT.
+
+## Target Directory Structure
+- `/scripts` - for autonomous logic.
+- `/ui` - for screen graphics and emotions.
+- `/brain` - for Gemini-to-NXT bridge scripts.
+
 # NXT Project Programs
 
 This document describes the python programs available in this directory for controlling the LEGO NXT brick.
